@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ok let go</title>
+</head>
+<body>
+<script>
+
+let paint ,i ,j;
+ i= j =1;
+paint = "<table border='1' cellspacing='0' cellpadding='3' width='300'>";
+while (i <= 10) {
+    paint = paint + "<tr>";
+    while (j <= 10) {
+        paint = paint + "<td>" + i * j + "</td>";
+        j = j + 1;
+    }
+    paint = paint + "</tr>";
+    i = i + 1;
+    j = 1;
+}
+paint = paint + "</table>";
+document.write(paint);
+
+</script>
+</body>
+</html>
